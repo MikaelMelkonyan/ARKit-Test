@@ -25,7 +25,7 @@ class SceneViewController: UIViewController {
     @IBAction func addNode(_ sender: UIButton) {
         let node = SCNNode()
         node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.02)
-        node.geometry?.firstMaterial?.diffuse.contents = UIColor.cyan //UIImage(named: "artem")
+        node.geometry?.firstMaterial?.diffuse.contents = UIColor.cyan
         arScene.scene.rootNode.addChildNode(node)
     }
     
