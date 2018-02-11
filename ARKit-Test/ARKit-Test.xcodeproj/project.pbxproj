@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		217B118520305F4B005502A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B118420305F4B005502A8 /* AppDelegate.swift */; };
-		217B118720305F4B005502A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B118620305F4B005502A8 /* ViewController.swift */; };
-		217B118A20305F4B005502A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217B118820305F4B005502A8 /* Main.storyboard */; };
 		217B118C20305F4B005502A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217B118B20305F4B005502A8 /* Assets.xcassets */; };
 		217B118F20305F4B005502A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217B118D20305F4B005502A8 /* LaunchScreen.storyboard */; };
+		217B119920306035005502A8 /* Scene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217B119820306035005502A8 /* Scene.storyboard */; };
+		217B119B2030604C005502A8 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217B119A2030604C005502A8 /* SceneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		217B118120305F4B005502A8 /* ARKit-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		217B118420305F4B005502A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		217B118620305F4B005502A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		217B118920305F4B005502A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		217B118420305F4B005502A8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		217B118B20305F4B005502A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		217B118E20305F4B005502A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		217B119020305F4B005502A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		217B119820306035005502A8 /* Scene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scene.storyboard; sourceTree = "<group>"; };
+		217B119A2030604C005502A8 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,30 @@
 		217B118320305F4B005502A8 /* ARKit-Test */ = {
 			isa = PBXGroup;
 			children = (
-				217B118420305F4B005502A8 /* AppDelegate.swift */,
-				217B118620305F4B005502A8 /* ViewController.swift */,
-				217B118820305F4B005502A8 /* Main.storyboard */,
-				217B118B20305F4B005502A8 /* Assets.xcassets */,
-				217B118D20305F4B005502A8 /* LaunchScreen.storyboard */,
-				217B119020305F4B005502A8 /* Info.plist */,
+				217B119620305FE5005502A8 /* Source */,
+				217B119720306017005502A8 /* Screens */,
 			);
 			path = "ARKit-Test";
+			sourceTree = "<group>";
+		};
+		217B119620305FE5005502A8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				217B118420305F4B005502A8 /* AppDelegate.swift */,
+				217B118B20305F4B005502A8 /* Assets.xcassets */,
+				217B119020305F4B005502A8 /* Info.plist */,
+				217B118D20305F4B005502A8 /* LaunchScreen.storyboard */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		217B119720306017005502A8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				217B119A2030604C005502A8 /* SceneViewController.swift */,
+				217B119820306035005502A8 /* Scene.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +140,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				217B118F20305F4B005502A8 /* LaunchScreen.storyboard in Resources */,
+				217B119920306035005502A8 /* Scene.storyboard in Resources */,
 				217B118C20305F4B005502A8 /* Assets.xcassets in Resources */,
-				217B118A20305F4B005502A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +152,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				217B118720305F4B005502A8 /* ViewController.swift in Sources */,
 				217B118520305F4B005502A8 /* AppDelegate.swift in Sources */,
+				217B119B2030604C005502A8 /* SceneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		217B118820305F4B005502A8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				217B118920305F4B005502A8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		217B118D20305F4B005502A8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -276,7 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NP78NRZ4Q7;
-				INFOPLIST_FILE = "ARKit-Test/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ARKit-Test/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mikael-Melkonyan.ARKit-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NP78NRZ4Q7;
-				INFOPLIST_FILE = "ARKit-Test/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ARKit-Test/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mikael-Melkonyan.ARKit-Test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
