@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,9 +16,41 @@
                     <view key="view" contentMode="scaleToFill" id="1up-SB-Hkq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHv-1O-2OZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF4-v5-t6L">
+                                <rect key="frame" x="255" y="547" width="80" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="5ca-XM-KXz"/>
+                                    <constraint firstAttribute="height" constant="80" id="Lbm-ru-2uK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNode:" destination="s9N-Qe-Tyh" eventType="touchUpInside" id="itN-oF-b8d"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fHT-OQ-yKs" firstAttribute="trailing" secondItem="CF4-v5-t6L" secondAttribute="trailing" constant="40" id="38k-dQ-bTH"/>
+                            <constraint firstAttribute="bottom" secondItem="fHv-1O-2OZ" secondAttribute="bottom" id="3Cx-b9-z3i"/>
+                            <constraint firstItem="fHT-OQ-yKs" firstAttribute="bottom" secondItem="CF4-v5-t6L" secondAttribute="bottom" constant="40" id="Z8A-d3-4q0"/>
+                            <constraint firstItem="fHv-1O-2OZ" firstAttribute="top" secondItem="1up-SB-Hkq" secondAttribute="top" id="eqy-ir-oz5"/>
+                            <constraint firstItem="fHv-1O-2OZ" firstAttribute="leading" secondItem="1up-SB-Hkq" secondAttribute="leading" id="hw7-Dd-wRK"/>
+                            <constraint firstAttribute="trailing" secondItem="fHv-1O-2OZ" secondAttribute="trailing" id="jYs-8K-ozR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fHT-OQ-yKs"/>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="CF4-v5-t6L" id="Pi9-yW-W5V"/>
+                        <outlet property="arScene" destination="fHv-1O-2OZ" id="0fX-cu-Dth"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRC-tw-50D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
