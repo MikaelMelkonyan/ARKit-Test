@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHv-1O-2OZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF4-v5-t6L">
                                 <rect key="frame" x="255" y="547" width="80" height="80"/>
@@ -55,8 +55,8 @@
                         <constraints>
                             <constraint firstItem="fHT-OQ-yKs" firstAttribute="trailing" secondItem="CF4-v5-t6L" secondAttribute="trailing" constant="40" id="38k-dQ-bTH"/>
                             <constraint firstAttribute="bottom" secondItem="fHv-1O-2OZ" secondAttribute="bottom" id="3Cx-b9-z3i"/>
+                            <constraint firstItem="fHv-1O-2OZ" firstAttribute="top" secondItem="fHT-OQ-yKs" secondAttribute="top" id="Qzm-0Y-aO2"/>
                             <constraint firstItem="fHT-OQ-yKs" firstAttribute="bottom" secondItem="CF4-v5-t6L" secondAttribute="bottom" constant="40" id="Z8A-d3-4q0"/>
-                            <constraint firstItem="fHv-1O-2OZ" firstAttribute="top" secondItem="1up-SB-Hkq" secondAttribute="top" id="eqy-ir-oz5"/>
                             <constraint firstItem="mdn-zS-NJJ" firstAttribute="leading" secondItem="fHT-OQ-yKs" secondAttribute="leading" constant="40" id="hpn-8E-OIQ"/>
                             <constraint firstItem="fHv-1O-2OZ" firstAttribute="leading" secondItem="1up-SB-Hkq" secondAttribute="leading" id="hw7-Dd-wRK"/>
                             <constraint firstAttribute="trailing" secondItem="fHv-1O-2OZ" secondAttribute="trailing" id="jYs-8K-ozR"/>
@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRC-tw-50D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20" y="-17"/>
+            <point key="canvasLocation" x="-20" y="-17.541229385307346"/>
         </scene>
     </scenes>
 </document>

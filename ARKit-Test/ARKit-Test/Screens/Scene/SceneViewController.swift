@@ -16,7 +16,8 @@ class SceneViewController: UIViewController {
     @IBOutlet var resetButton: UIButton!
     
     private let configuration = ARWorldTrackingConfiguration()
-    override var prefersStatusBarHidden: Bool { return true }
+    
+    var figure: GeometricFigure = .parallelepiped
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,16 +26,28 @@ class SceneViewController: UIViewController {
     }
     
     @IBAction func addNode(_ sender: UIButton) {
-//        createSimpleNode()
-//        createCapsuleNode()
-//        createConeNode()
-//        createCylinder()
-//        createSphere()
-//        createTube()
-//        createTorus()
-//        createPlane()
-//        createPyramid()
-        createShape()
+        switch figure {
+        case .parallelepiped:
+            createSimpleNode()
+        case .capsule:
+            createCapsuleNode()
+        case .cone:
+            createConeNode()
+        case .cylinder:
+            createCylinder()
+        case .sphere:
+            createSphere()
+        case .tube:
+            createTube()
+        case .torus:
+            createTorus()
+        case .plane:
+            createPlane()
+        case .pyramid:
+            createPyramid()
+        case .shape:
+            createShape()
+        }
     }
     
     @IBAction func resetScene(_ sender: UIButton) {
@@ -63,7 +76,7 @@ extension SceneViewController {
     
     fileprivate func createSimpleNode() {
         let node = SCNNode()
-        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.02)
+        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0)
         setupNode(node)
         arScene.scene.rootNode.addChildNode(node)
     }
